@@ -1,0 +1,292 @@
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+a{ 
+    color: inherit; 
+    text-decoration: none; 
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background: #f2f5f7;
+    line-height: 1.5;
+    background-color: rgb(235, 225, 213);
+}
+
+header{
+    background: #4d320e; 
+    color: #fff; 
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 1.4rem;
+}
+
+.logo b{
+    color: orange;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.registro{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    padding: 7px;
+}
+
+header nav a:hover{
+    background-color: #83643c;
+    border-radius: 5px;
+}
+
+.registro:hover{
+    background-color: #83643c;
+    border-radius: 5px;
+}
+
+.imagenGrande{
+    width: 100%;
+    height: 40vh;
+}
+
+main{
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.noticias{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.noticias h3{
+    border-bottom: 2px solid #4d320e;
+}
+
+.noticia{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.fecha{
+    font-size: 12px;
+    color: gray;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.curso{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.cursos{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 280px;
+    gap: 20px;
+}
+
+.cajaCurso{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.cajaCurso img{
+    width: 100%;
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cajaCurso .info{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cajaCurso .info .dinero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cajaCurso .info .dinero a{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(0, 126, 57);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px;
+}
+
+.cajaCurso .info .dinero a:hover{
+    background-color: rgb(0, 161, 73);
+}
+
+.herramientas{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 210px;
+    gap: 14px;
+}
+
+.cajaHerramienta{
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.cajaHerramienta img{
+    width: 100%;
+    height: 120px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.cajaHerramienta .info{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cajaHerramienta .info .nDescripcion{
+    height: 100px;
+}
+
+.cajaHerramienta .info .dinero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cajaHerramienta .info .dinero a{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(0, 126, 57);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px;
+}
+
+.cajaHerramienta .info .dinero a:hover{
+    background-color: rgb(0, 161, 73);
+}
+
+aside{
+    width: 250px;
+    height: 500px;
+    float: right;
+    margin-right: 40px;
+}
+
+.cajaDescuento{
+    background-color: #4d320e;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.cajaDescuento img {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: auto;
+}
+
+.cajaDescuento p{
+    padding: 20px;
+    text-align: center;
+}
+
+footer{
+    background: #2b1a04; 
+    color: #fff; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .legal{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+footer .legal li:hover{
+    text-decoration: underline;
+}
+
+footer .redes{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+footer .redes li:hover{
+    text-decoration: underline;
+}
+
+footer .derechos{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    border-top: 1px solid rgb(78, 78, 78);
+    padding: 15px;
+}
+
+footer .derechos p{
+    font-size: 12px;
+}
